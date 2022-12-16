@@ -5,16 +5,16 @@ import Form from "./Form";
 function Contacts() {
   const [contacts, setContacts] = useState([
     {
-      fullname: "Sinan",
-      phone_number: "123123",
+      fullname: "Sinan DENİZ",
+      phone_number: "05642546815",
     },
     {
-      fullname: "Ali",
-      phone_number: "456456",
+      fullname: "Ali DEĞİRMEN",
+      phone_number: "05498561254",
     },
     {
-      fullname: "Nazlı",
-      phone_number: "987876",
+      fullname: "Nazlı DAĞ",
+      phone_number: "05388451545",
     },
   ]);
 
@@ -24,7 +24,7 @@ function Contacts() {
 
   return (
     <div id="container">
-      <h1>My Contacts</h1>
+      <h1 className="title">MY CONTACTS</h1>
       <List contacts={contacts} />
       <Form addContact={setContacts} contacts={contacts} />
     </div>

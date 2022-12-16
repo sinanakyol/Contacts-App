@@ -38,7 +38,7 @@ function Form({ addContact, contacts }) {
         />
       </div>
       <div className="btn">
-        <button>Add</button>
+        <button>ADD</button>
       </div>
     </form>
   );

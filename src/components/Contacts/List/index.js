@@ -17,7 +17,7 @@ function List({ contacts }) {
   return (
     <div>
       <input
-        placeholder="Filter contact"
+        placeholder="Search..."
         value={filterText}
         onChange={(e) => setFilterText(e.target.value)}
       ></input>
@@ -31,7 +31,7 @@ function List({ contacts }) {
         ))}
       </ul>
 
-      <p>Total contacts ({filtered.length}) </p>
+      <p className="contacts_number"> {filtered.length} CONTACTS </p>
     </div>
   );
 }
